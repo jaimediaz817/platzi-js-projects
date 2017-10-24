@@ -1,5 +1,10 @@
 # ignorando carpetas IDE
 .vscode
 
+# ignorando dependencias de NPM, NODE  => ENTORNO (LOCAL)
+node_modules
+.DS_STORE
+
 # ignorando ficheros específicos
 BACKUP__index.js
+historialProcesos.txt

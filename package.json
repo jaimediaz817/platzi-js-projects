@@ -1,0 +1,32 @@
+{
+  "name": "j-converter",
+  "version": "0.1.0",
+  "description": "Convertidor de unidades de medidas de peso",
+  "main": "dist/src/jConverter.js",
+  "scripts": {
+    "build": "babel src/jConverter.js -d dist",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimediaz817/platzi-js-projects.git"
+  },
+  "keywords": [
+    "convertir",
+    "unidades",
+    "peso",
+    "transformar",
+    "conversor",
+    "convertidor",
+    "revelador",
+    "relevator"
+  ],
+  "author": "Jaime Diaz <jdsolutions817@gmail.com> (https://sites.google.com/view/memodevs/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

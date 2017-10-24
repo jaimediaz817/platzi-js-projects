@@ -13,8 +13,10 @@
 	Tests
 	-----------------
 	
+	
 	*/
-	var jConverter = function(){
+	function jConverter(){
+	//var jConverter = function(){
 	//var jConverter = function(uMedidaOrigen = 'kl', uMedudaDestino = 'lb', valor = 0) {
 	  
 	  // variables de instancia
@@ -267,11 +269,12 @@
 	var obj = jConverter();
 	//var resultadoConversion = obj.calcularMedidas('lb','kg',94)
 	var resultado = obj.iniciar()
+	console.log("---> ---> ---> --->"+resultado)
 	// pintar tabla 
-	console.log(JSON.stringify(obj.getMedidas())+" <== SIMULACIÓN FUERA DEL SCOPE, calcular medidas=>")
+	//console.log(JSON.stringify(obj.getMedidas())+" <== SIMULACIÓN FUERA DEL SCOPE, calcular medidas=>")
 	var medidasCatch = JSON.stringify(obj.getMedidas())
 	let res = obj.calcularMedidas('lb','kg', 188)
-	console.log(medidasCatch.length+"lenght"+" , test FINAL => "+res)	
+	//console.log(medidasCatch.length+"lenght"+" , test FINAL => "+res)	
 	// test <<<<<
 	
   // FINAL IIEF
