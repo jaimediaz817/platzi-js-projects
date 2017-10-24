@@ -1,0 +1,5 @@
+# ignorando carpetas IDE
+.vscode
+
+# ignorando ficheros específicos
+BACKUP__index.js
