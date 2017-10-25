@@ -3,14 +3,15 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 [Para ver detalles sobre el procedimiento ejecutado durante el desarrollo del taller, presiona click sobre el enlace]( https://sites.google.com/view/memodevs)
 
 ## Descripción del mecanismo de conversión JConverter
--	Como paso inicial se crea una instancia del modulo sin parámetros de entrada
--	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro.
--	Unidad origen: corresponde al parametro número 1 según el orden.
--	Unidad Destino: corresponde al parametro número 1 según el orden.
+-	Como paso inicial se crea una instancia del modulo sin parámetros de entrada y tendrá como retorno el numero cero 0.
+-   Cada unidad de medida en el contexto de la aplicación tendrá solo 2 caracteres, es decir: 'tl' para representar toneladas, 'kg' para representar Kilogramos, 'lb' para representar Libras y 'mg' para representar finalmente miligramos.
+-	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro, es decir, si quiero convertir de Kilos a Libras el orden ideal sería:  'kg', 'lb'...
+-	Unidad origen: corresponde al parametro número 1 según el orden. ('kg', ...
+-	Unidad Destino: corresponde al parametro número 1 según el orden. ('...', 'lb')
 
 ## Instalación
 ```
-npm install j-converter
+npm install jConverter
 ```
 
 ## Uso
