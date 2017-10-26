@@ -1,5 +1,5 @@
 {
-  "name": "j-converter",
+  "name": "jconverter",
   "version": "0.1.0",
   "description": "Convertidor de unidades de medidas de peso",
   "main": "dist/src/jConverter.js",
