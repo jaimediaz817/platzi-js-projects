@@ -5,13 +5,28 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 ## Descripción del mecanismo de conversión JConverter
 -	Como paso inicial se crea una instancia del modulo sin parámetros de entrada y tendrá como retorno el numero cero 0.
 -   Cada unidad de medida en el contexto de la aplicación tendrá solo 2 caracteres, es decir: 'tl' para representar toneladas, 'kg' para representar Kilogramos, 'lb' para representar Libras y 'mg' para representar finalmente miligramos.
--	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro, es decir, si quiero convertir de Kilos a Libras el orden ideal sería:  'kg', 'lb'...
+-	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro, es decir, si quiero convertir de Kilos a Libras el orden ideal sería:  'kg', 'lb' para los dos primeros parametros de entrada, y un valor entero numérico como tercer y último parámetro.
 -	Unidad origen: corresponde al parametro número 1 según el orden. ('kg', ...
 -	Unidad Destino: corresponde al parametro número 1 según el orden. ('...', 'lb')
 
 ## Instalación
 ```
 npm install jConverter
+```
+
+## Métodos que incorpora
+```
+- Actualmente la función cuenta con algunos servicios básicos para desplegar una vista agradable y sencilla al cliente
+- Estos servicios se exponen desde el retorno de función, y a su vez realiza el llamado a miembros propios (funciones con otro nombre interno)
+para así lograr un desacople de responsabilidades y 100% modular.
+```
+
+```
+iniciar: sin parámetros de entrada
+getMedidas: sin parametros de entrada
+calcularMedidas: con parametros ('kg', 'lb', 94)
+getObjOrigen: sin parametros, retorna todo el objeto origen
+getObjDestino: sin parametros, retorna todo el objeto destino
 ```
 
 ## Uso
@@ -37,7 +52,8 @@ console.log("validación de unidades básico: "+(resultadoA==resultadoB))
 ```
 
 ## Créditos
-- [Jaime Diaz](https://twitter.com/jdiaz0017)
+- [Twitter Jaime Diaz](https://twitter.com/jdiaz0017)
+- [Sitio en google de Jaime Diaz](https://sites.google.com/view/memodevs/)
 
 ## Licencia
 [MIT](https://opensource.org/licenses/MIT)
